@@ -75,15 +75,15 @@ const Navbar = () => {
                         <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
                             {navLinks.map((link) => (
                                 <li
-                                    key={link.id}
-                                    className={`font-poppins font-medium cursor-pointer text-[16px] ${active === link.title ? "text-white" : "text-secondary"
+                                    key={.id}
+                                    className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
                                         }`}
                                     onClick={() => {
                                         setToggle(!toggle);
                                         setActive(nav.title);
                                     }}
                                 >
-                                    <a href={`#${link.id}`}>{link.title}</a>
+                                    <a href={`#${nav.id}`}>{nav.title}</a>
                                 </li>
                             ))}
                         </ul>

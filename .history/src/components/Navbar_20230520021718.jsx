@@ -76,14 +76,14 @@ const Navbar = () => {
                             {navLinks.map((link) => (
                                 <li
                                     key={link.id}
-                                    className={`font-poppins font-medium cursor-pointer text-[16px] ${active === link.title ? "text-white" : "text-secondary"
+                                    className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
                                         }`}
                                     onClick={() => {
                                         setToggle(!toggle);
                                         setActive(nav.title);
                                     }}
                                 >
-                                    <a href={`#${link.id}`}>{link.title}</a>
+                                    <a href={`#${nav.id}`}>{nav.title}</a>
                                 </li>
                             ))}
                         </ul>

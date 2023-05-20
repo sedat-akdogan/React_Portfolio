@@ -40,10 +40,10 @@ const Navbar = () => {
                         window.scrollTo(0, 0);
                     }}
                 >
-                    <img src={sedat} alt='logo' className='w-9 h-9 object-contain' />
+                    <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
                     <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-                        Sedat &nbsp;
-                        <span className='sm:block hidden'>Akdogan</span>
+                        Adrian &nbsp;
+                        <span className='sm:block hidden'> | JavaScript Mastery</span>
                     </p>
                 </Link>
 

@@ -12,6 +12,7 @@ const Hero = () => {
                     <div className='w-1 sm:h-80 h-40 violet-gradient' />
 
                 </div>
+
             </div>
         </section>
     );

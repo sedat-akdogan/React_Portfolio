@@ -15,7 +15,7 @@ const Navbar = () => {
             0 z-50 bg-primary}`}
         >
             <div className='w-full flex justify-between items-center max-w-7xl mx- 
-            auto z-50 bg-primary absolute inset-y-0'
+            auto z-50 bg-primary'
             >
                 <Link
                     to='/'

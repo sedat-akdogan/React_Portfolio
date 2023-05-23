@@ -7,7 +7,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-
+//template_fi8l2bd
+//service_lr70zhd
+//rUFM2qY2tuC8Yk7nV
 const Contact = () => {
     const formRef = useRef();
     const [form, setForm] = useState({
@@ -33,23 +35,22 @@ const Contact = () => {
         setLoading(true);
 
         emailjs
-            .send(service_lr70zhd, template_fi8l2bd,
-                //import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-                //import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+            .send(
+                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
                     from_name: form.name,
                     to_name: "Sedat Akdogan",
                     from_email: form.email,
-                    to_email: "sedat21galaxy@gmail.com",
+                    to_email: "sedat21galaxy",
                     message: form.message,
                 },
-                rUFM2qY2tuC8Yk7nV
-                //import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
             )
             .then(
                 () => {
                     setLoading(false);
-                    alert("Thank you. I will get back to you soon.");
+                    alert("Thank you. I will get back to you as soon as possible.");
 
                     setForm({
                         name: "",
@@ -61,7 +62,7 @@ const Contact = () => {
                     setLoading(false);
                     console.error(error);
 
-                    alert("Oops, something went wrong. Please try again.");
+                    alert("Ahh, something went wrong. Please try again.");
                 }
             );
     };

@@ -27,11 +27,12 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`${styles.paddingX
-                } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
-                }`}
+            className={`${styles.paddingX} w-full h-20 flex items-center py-5 fixed top- 
+            0 z-50 bg-primary}`}
         >
-            <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+            <div className='w-full flex justify-between items-center max-w-7xl mx- 
+            auto z-50 bg-primary absolute inset-y-0'
+            >
                 <Link
                     to='/'
                     className='flex items-center gap-2'

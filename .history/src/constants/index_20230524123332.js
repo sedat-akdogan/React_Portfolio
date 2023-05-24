@@ -34,14 +34,7 @@ export const navLinks = [
         id: "work",
         title: "Work",
     },
-    {
-        id: "projects",
-        title: "Projects"
-    },
-    {
-        id: "feedback",
-        title: "Feedbacks"
-    },
+    {},
     {
         id: "contact",
         title: "Contact",

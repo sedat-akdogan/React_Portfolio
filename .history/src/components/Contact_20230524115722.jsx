@@ -33,7 +33,8 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs.send(
+        emailjs
+            .send(
                 import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
@@ -61,7 +62,7 @@ const Contact = () => {
                     setLoading(false);
                     console.error(error);
 
-                    alert("Oops!, something went wrong. Please try again.");
+                    alert("Oops, something went wrong. Please try again.");
                 }
             );
     };

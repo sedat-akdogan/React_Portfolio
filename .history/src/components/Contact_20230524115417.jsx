@@ -28,14 +28,16 @@ const Contact = () => {
         });
     };
 
+    // 'service_lr70zhd', 'template_fi8l2bd',
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs.send(
-                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        emailjs
+            .send(
+                //import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                //import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
                     from_name: form.name,
                     to_name: "Sedat Akdogan",
@@ -44,7 +46,7 @@ const Contact = () => {
                     message: form.message,
                 },
                 
-                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+                //import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
             )
             .then(
                 () => {
@@ -61,7 +63,7 @@ const Contact = () => {
                     setLoading(false);
                     console.error(error);
 
-                    alert("Oops!, something went wrong. Please try again.");
+                    alert("Oops, something went wrong. Please try again.");
                 }
             );
     };

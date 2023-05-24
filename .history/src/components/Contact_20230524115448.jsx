@@ -28,13 +28,15 @@ const Contact = () => {
         });
     };
 
+    // 'service_lr70zhd', 'template_fi8l2bd', 'rUFM2qY2tuC8Yk7nV',
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs.send(
-                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        emailjs
+            .send(
+                import.env.VITE_APP_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
                     from_name: form.name,
@@ -44,7 +46,7 @@ const Contact = () => {
                     message: form.message,
                 },
                 
-                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+                import.env.VITE_APP_EMAILJS_PUBLIC_KEY
             )
             .then(
                 () => {
@@ -61,7 +63,7 @@ const Contact = () => {
                     setLoading(false);
                     console.error(error);
 
-                    alert("Oops!, something went wrong. Please try again.");
+                    alert("Oops, something went wrong. Please try again.");
                 }
             );
     };

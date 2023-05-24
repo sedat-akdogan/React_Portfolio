@@ -43,7 +43,7 @@ const Contact = () => {
                     to_email: "sedat21galaxy@gmail.com",
                     message: form.message,
                 },
-                'rUFM2qY2tuC8Yk7nV',
+                rUFM2qY2tuC8Yk7nV
                 //import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
             )
             .then(

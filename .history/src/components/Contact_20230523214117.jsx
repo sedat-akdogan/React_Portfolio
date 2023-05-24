@@ -33,7 +33,7 @@ const Contact = () => {
         setLoading(true);
 
         emailjs
-            .send('service_lr70zhd', 'template_fi8l2bd',
+            .send('service_lr70zhd, template_fi8l2bd,
                 //import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
                 //import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
@@ -43,7 +43,7 @@ const Contact = () => {
                     to_email: "sedat21galaxy@gmail.com",
                     message: form.message,
                 },
-                'rUFM2qY2tuC8Yk7nV',
+                rUFM2qY2tuC8Yk7nV
                 //import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
             )
             .then(

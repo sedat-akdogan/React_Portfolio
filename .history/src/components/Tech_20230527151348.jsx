@@ -5,6 +5,7 @@ import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { slideIn } from "../utils/motion";
+import { EarthCanvas } from "./canvas";
 
 
 const Tech = () => {
@@ -16,6 +17,7 @@ const Tech = () => {
                 className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
             >
                 <p className={styles.sectionSubText}></p>
+
                 <div className='flex flex-row flex-wrap justify-center gap-10'>
                     {technologies.map((technology) => (
                         <div className='w-40 h-40' key={technology.name}>
@@ -28,6 +30,7 @@ const Tech = () => {
                 variants={slideIn("right", "tween", 0.2, 1)}
                 className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
             >
+                 <EarthCanvas />
             </motion.div>
         </div>
     );

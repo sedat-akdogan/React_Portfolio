@@ -5,6 +5,7 @@ import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { slideIn } from "../utils/motion";
+import { EarthCanvas } from "./canvas";
 
 
 const Tech = () => {

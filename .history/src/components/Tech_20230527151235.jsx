@@ -7,6 +7,7 @@ import { technologies } from "../constants";
 import { slideIn } from "../utils/motion";
 
 
+
 const Tech = () => {
 
     return (
@@ -16,6 +17,7 @@ const Tech = () => {
                 className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
             >
                 <p className={styles.sectionSubText}></p>
+
                 <div className='flex flex-row flex-wrap justify-center gap-10'>
                     {technologies.map((technology) => (
                         <div className='w-40 h-40' key={technology.name}>

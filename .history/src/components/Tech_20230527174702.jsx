@@ -3,7 +3,7 @@ import React from "react";
 import { BallCanvas, StarsCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-
+import { Stars } from "@react-three/drei";
 
 const Tech = () => {
     return (

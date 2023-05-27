@@ -1,9 +1,9 @@
 import React from "react";
 
-import { BallCanvas, StarsCanvas } from "./canvas";
+import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-
+import { Stars } from "@react-three/drei";
 
 const Tech = () => {
     return (
@@ -20,7 +20,7 @@ const Tech = () => {
                 variants={slideIn("right", "tween", 0.2, 1)}
                 className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
             >
-                <StarsCanvas />
+                <StarsC />
             </motion.div>
         </div>
     );

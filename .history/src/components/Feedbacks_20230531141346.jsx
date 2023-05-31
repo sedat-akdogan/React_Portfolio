@@ -59,6 +59,9 @@ const Feedbacks = () => {
                     <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
                 ))}
             </div>
+            <motion.div>
+                <StarsCanvas />
+            </motion.div>
         </div>
     );
 };

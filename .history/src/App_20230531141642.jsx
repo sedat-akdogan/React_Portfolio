@@ -13,13 +13,17 @@ const App = () => {
                 </div>
                 <About />
                 <Experience />
-                <Tech />
+                <div className="relative">
+                    <Tech />
+                    <StarsCanvas />
+                </div>
                 <Works />
                 <Feedbacks />
                 <div className='relative z-0'>
                     <Contact />
                     <StarsCanvas />
                 </div>
+
             </div>
         </BrowserRouter>
     );

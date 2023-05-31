@@ -51,7 +51,9 @@ const ExperienceCard = ({ experience }) => {
                     </li>
                 ))}
             </ul>
-            
+            <motion.div>
+                <StarsCanvas />
+            </motion.div>
         </VerticalTimelineElement>
     );
 };

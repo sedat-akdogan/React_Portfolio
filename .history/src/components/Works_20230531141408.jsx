@@ -93,6 +93,9 @@ const Works = () => {
                     <ProjectCard key={`project-${index}`} index={index} {...project} />
                 ))}
             </div>
+            <motion.div>
+                <StarsCanvas />
+            </motion.div>
         </>
     );
 };

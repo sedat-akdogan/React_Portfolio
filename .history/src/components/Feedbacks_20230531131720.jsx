@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { StarsCanvas } from "./canvas";
+
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -59,9 +59,7 @@ const Feedbacks = () => {
                     <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
                 ))}
             </div>
-            <motion.div>
-                <StarsCanvas />
-            </motion.div>
+            
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { StarsCanvas } from "./canvas";
+
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -63,6 +63,7 @@ const ProjectCard = ({
                     ))}
                 </div>
             </Tilt>
+            
         </motion.div>
     );
 };
@@ -93,9 +94,6 @@ const Works = () => {
                     <ProjectCard key={`project-${index}`} index={index} {...project} />
                 ))}
             </div>
-            <motion.div>
-                <StarsCanvas />
-            </motion.div>
         </>
     );
 };

@@ -9,7 +9,6 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import { StarsCanvas } from "./canvas";
 
 const ExperienceCard = ({ experience }) => {
     return (
@@ -51,9 +50,7 @@ const ExperienceCard = ({ experience }) => {
                     </li>
                 ))}
             </ul>
-            <motion.div>
-                <StarsCanvas />
-            </motion.div>
+            
         </VerticalTimelineElement>
     );
 };

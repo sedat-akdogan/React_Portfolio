@@ -1,7 +1,7 @@
 import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-import { StarsCanvas } from "./canvas";
+
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -58,8 +58,11 @@ const About = () => {
                     <ServiceCard key={service.title} index={index} {...service} />
                 ))}
             </div>
-            <motion.div>
-                <StarsCanvas />
+            <motion.div
+                variants={slideIn("right", "tween", 0.2, 1)}
+                className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+            >
+                <EarthCanvas />
             </motion.div>
         </>
     );

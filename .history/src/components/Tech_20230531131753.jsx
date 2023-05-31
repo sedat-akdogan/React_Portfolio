@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import { BallCanvas, StarsCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
@@ -16,9 +16,7 @@ const Tech = () => {
                 ))}
 
             </div>
-            <motion.div>
-                <StarsCanvas />
-            </motion.div>
+            
         </div>
     );
 };

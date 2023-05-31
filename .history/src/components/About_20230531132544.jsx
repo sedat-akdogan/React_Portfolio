@@ -1,7 +1,7 @@
 import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-import { StarsCanvas } from "./canvas";
+import {  }
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";

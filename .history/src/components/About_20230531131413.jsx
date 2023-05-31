@@ -1,7 +1,7 @@
 import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-import { StarsCanvas } from "./canvas";
+
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -58,9 +58,7 @@ const About = () => {
                     <ServiceCard key={service.title} index={index} {...service} />
                 ))}
             </div>
-            <motion.div>
-                <StarsCanvas />
-            </motion.div>
+            
         </>
     );
 };
